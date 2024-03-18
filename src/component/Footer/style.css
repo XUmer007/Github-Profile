@@ -1,0 +1,33 @@
+footer {
+  padding: 0 50px;
+  width: 100vw;
+  min-width: var(--min-width);
+  max-width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer > .content {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer > .content,
+.legal-meta {
+  display: flex;
+  align-items: center;
+}
+/* Logo Link */
+footer .content a.logo-link {
+  fill: #626262;
+}
+footer .content a.logo-link:hover {
+  fill: #8f8f8f;
+}
+footer > .content > .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer > .content > .nav-links > a {
+  font-size: 14px;
+}

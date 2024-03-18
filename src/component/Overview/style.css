@@ -1,0 +1,69 @@
+.overview {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 70%;
+  min-width: var(--min-width);
+}
+/* Card */
+.card {
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 4px;
+  padding: 20px 30px;
+}
+.card.full-card {
+  width: 100%;
+}
+.card.half-card {
+  width: 49%;
+}
+.card .card-head {
+  display: flex;
+  justify-content: space-between;
+}
+.card .breadcrumb {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  display: flex;
+  list-style: none;
+}
+/* Add a slash before every list element except the first one. */
+.card .breadcrumb li:not(.breadcrumb li:first-child):before {
+  content: '/';
+  padding: 0 5px;
+}
+.card .breadcrumb .link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2848fe;
+  font-size: 14px;
+}
+.card .breadcrumb .link:hover {
+  text-decoration: underline;
+}
+#edit-icon:hover {
+  fill: #2848fe;
+  cursor: pointer;
+}
+#drag-icon:hover {
+  fill: #616161;
+  cursor: grab;
+}
+/* Responsive */
+@media (max-width: 1024px) {
+  .overview {
+    width: 100%;
+    padding: 0 40px;
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pinned-repos {
+    flex-direction: column;
+    width: 100%;
+  }
+  .card.half-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,122 @@
+.user-info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 300px;
+  margin-top: -60px;
+}
+/* User Avatar */
+.user-info > .user-avatar {
+  width: 100%;
+  border: 1px solid #bebebe;
+  border-radius: 100%;
+}
+.user-info article {
+  margin-top: 20px;
+}
+/* Basic Information */
+.name {
+  letter-spacing: 0.04rem;
+}
+.username {
+  color: #8a8a8a;
+  font-weight: 100;
+}
+.bio {
+  margin: 20px 0;
+}
+/* Edit Button */
+.user-info article button {
+  padding: 10px;
+  font-size: 14px;
+  width: 300px;
+  background-color: #f0f0f0;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* Followers */
+.user-info article #follow {
+  margin-top: 20px;
+}
+
+.user-info article #follow a:first-child .icon {
+  position: relative;
+  bottom: -3px;
+}
+.user-info article #follow a:nth-child(2)::before {
+  content: '.';
+  margin: 0 15px;
+  position: relative;
+  top: -3px;
+}
+/* Address */
+.user-info article address {
+  margin-top: 30px;
+  font-style: normal;
+}
+
+.user-info article .social-info a {
+  display: block;
+}
+
+.user-info article .labels {
+  display: block;
+}
+/* General Rules */
+.icon {
+  margin-right: 10px;
+}
+.link {
+  color: #5f5f5f;
+  text-decoration: none;
+}
+.link:hover {
+  color: #3e7ce0 !important;
+}
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: #e8e8e8;
+}
+.org-img {
+  border-radius: 10px;
+  width: 50px;
+}
+/* Responsive */
+@media (max-width: 1115px) {
+  .user-info > .user-avatar {
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  .user-info {
+    margin-top: 20px;
+    width: 100%;
+
+    max-width: 750px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+  }
+  .user-info > .user-avatar {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 600px) {
+  .user-info {
+    font-size: 0.8em;
+    min-width: var(--min-width);
+    gap: 10px;
+  }
+  .user-info > .user-avatar {
+    width: 10rem;
+    height: 10rem;
+  }
+  .user-info article #follow a:nth-child(2)::before {
+    margin: 0 2px;
+  }
+}
